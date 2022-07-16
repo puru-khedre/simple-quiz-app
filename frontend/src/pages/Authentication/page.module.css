@@ -1,0 +1,92 @@
+.container {
+  height: 100vh;
+  background-color: rgb(248, 248, 248);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container > div {
+  max-width: 90vw;
+  width: 450px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.144);
+  border: 1px solid rgb(209, 209, 209);
+  overflow: hidden;
+  background: white;
+  text-align: center;
+}
+
+.tabs {
+  width: 100%;
+  margin-bottom: 15px;
+  display: flex;
+}
+
+.selected {
+  background-color: white !important;
+  border-bottom-color: transparent !important;
+}
+
+.tabs > button {
+  background-color: rgb(233, 233, 233);
+  border: none;
+  border-bottom: 2px solid grey;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 600;
+  width: 100%;
+  padding: 15px;
+}
+
+.signForm {
+  background-color: white;
+  width: 80%;
+  margin: auto;
+}
+.signForm > input {
+  border: 1px solid grey;
+  border-radius: 7px;
+  padding: 10px;
+  width: 100%;
+  display: block;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.signForm input:focus {
+  box-shadow: 0 0 7px 1px rgba(0, 0, 0, 0.144);
+  border-color: black;
+  outline: none;
+}
+
+.signForm > button,
+.btn__google {
+  background-color: rgb(58, 255, 91);
+  border: none;
+  border-radius: 7px;
+  width: 100%;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 10px;
+  margin: 7px 0;
+}
+
+.btn__google {
+  background-color: rgb(211, 211, 211);
+  width: 60%;
+  min-width: max-content;
+  border: 1px solid transparent;
+  margin: 10px 0 15px;
+}
+.btn__google:hover {
+  box-shadow: 0 0 7px 1px rgb(177, 177, 177);
+  border-color: (156, 156, 156);
+}
+
+.signForm > button:hover {
+  filter: brightness(0.85);
+  box-shadow: 0 0 7px 1px rgb(58, 255, 91);
+}
+hr {
+  margin: 0 10%;
+}
